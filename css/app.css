@@ -1,0 +1,254 @@
+@font-face{font-family:'proxima-nova-regular';src:url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.eot");src:url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.eot?#iefix") format("embedded-opentype"),url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.woff2") format("woff2"),url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.woff") format("woff"),url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.ttf") format("truetype"),url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.svg#proxima-nova-regular") format("svg");font-weight:normal;font-style:normal}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+* {
+    border: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+	overflow-x: hidden;
+	font: normal 100%/1.5 'proxima-nova-regular', 'Helvetica Neue', Arial, sans-serif;
+}
+
+img {
+    display: block;
+}
+header {
+    /*background: #ee7873;*/
+    /*background: #7dccad;*/
+    /*background: #111;*/
+    /*background: url(http://wtf.jefff.co/Tradesy-Comps/images/backs/Shiny_Gold.jpg) no-repeat left top;
+    background-size: cover;*/
+    /*border-bottom: 4rem solid #ee7873;*/
+    /*padding: 1rem;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*padding: 0 1.5rem;*/
+    z-index: 3;
+}
+header img {
+	position: relative;
+	top: 1rem;
+	z-index: 2;
+	/*float: left;*/
+	margin: auto;
+    max-width: 100px;
+    /*left: 1rem;*/
+}
+header .btn {
+	background: none;
+	font-size: 1rem;
+	line-height: 1.5;
+	/*padding: 0;*/
+	float: right;
+	padding: 1rem;
+	cursor: pointer;
+	/*margin: 0;*/
+}
+header .btn:active {
+	opacity: .5;
+}
+nav {
+	background: rgba(0,0,0,0.5);
+	display: block;
+	text-align: center;
+}
+nav a {
+	color: white;
+	display: inline-block;
+	padding: 1rem;
+	text-decoration: none;
+}
+nav a:active {
+	opacity: .5;
+}
+/*.cover {
+	background: rgba(0,0,0,0.5);
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}*/
+[role=main] {
+    margin: auto;
+    max-width: 30rem;
+    padding: 3rem 1.5rem;
+    position: relative;
+    z-index: 4;
+}
+article, .feature a {
+    color: #888;
+    font: normal 100%/1.5 'proxima-nova-regular', 'Helvetica Neue', Arial, sans-serif;
+}
+/*article + article {
+    border-top: 2px solid #ddd;
+    margin-top: 3rem;
+    padding-top: 3rem;
+}*/
+hr {
+	background: #efefef;
+	border: 0;
+	height: 3px;
+	width: 150%;
+	margin: 4rem -25% 3rem;
+	transform: rotate(2.5deg);
+}
+.alt {
+	margin: 3rem -25% 4rem;
+	transform: rotate(-2.5deg);
+}
+/*hr:after {
+	background: red;
+	content: "";
+	display: block;
+	height: 3px;
+	width: 150%;
+	margin: 3rem 0 3rem -25%;
+	transform: rotate(-2.5deg);
+}*/
+h1 {
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+a {
+    color: #ee7873;
+}
+small {
+    border-left: 2px solid #efefef;
+    color: #ccc;
+    display: block;
+    line-height: 1;
+    margin-bottom: .75rem;
+    padding-left: .5rem;
+}
+.btn {
+    background: #ee7873;
+    border-radius: 3px;
+    color: white;
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .35rem .5rem;
+    text-decoration: none;
+}
+
+.featured {
+	background: url(http://stylonica.com/wp-content/uploads/2013/08/fashion-backgrounds-for-desktop.jpg) no-repeat center center;
+	background-size: cover;
+	padding: 5rem 0;
+	margin-bottom: -20px;
+	position: relative;
+}
+.featured:after {
+	background: white;
+	content: "";
+	display: block;
+	position: relative;
+	top: 100px;
+	left: -5%;
+	height: 100px;
+	width: 150%;
+	z-index: 3;
+	transform: rotate(-2.5deg);
+}
+.cover {
+	background: rgba(0,0,0,0.75);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.35)), color-stop(100%,rgba(0,0,0,0.75)));
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
+.feature {
+	display: table;
+	float: left;
+	height: 300px;
+	padding: 0 2rem;
+	/*text-align: center;*/
+	width: 50%;
+	position: relative;
+	z-index: 2;
+}
+.feature a {
+	color: white;
+	display: table-cell;
+	height: 300px;
+	margin: auto;
+	vertical-align: bottom;
+	width: 100%
+}
+.feature h1 {
+	margin: auto;
+	max-width: 30rem;
+}
+.feature .btn {
+	font-size: 15px;
+	line-height: 1.5;
+}
+
+@media screen and (max-width: 800px){
+
+.feature {
+	width: 100%;
+	float: none;
+}
+.feature + .feature {
+	display: none;
+}
+
+}
+
+@media screen and (min-width: 700px){
+
+header img {
+	float: left;
+	top: 1.5rem;
+	left: 1.5rem;
+}
+nav {
+	/*background: none;*/
+	float: right;
+	padding: 0;
+	position: relative;
+	top: 1rem;
+	/*right: 1rem;*/
+}
+nav a {
+	/*border-bottom: 2px solid currentColor;*/
+	display: inline-block;
+	/*padding: .5rem;*/
+}
+nav a + a {
+	/*margin-left: 1rem;*/
+}
+
+}
+
+@media screen and (min-width: 1500px){
+
+.featured:after {
+	top: 150px;
+	height: 150px;
+}
+
+}
