@@ -18,10 +18,17 @@
     margin: 0;
     padding: 0;
 }
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	outline: 2px dotted currentColor;
+}
 
 html {
-	overflow-x: hidden;
+	border: 10px solid white;
 	font: normal 100%/1.5 'proxima-nova-regular', 'Helvetica Neue', Arial, sans-serif;
+	overflow-x: hidden;
 }
 
 img {
@@ -36,7 +43,7 @@ header {
     /*border-bottom: 4rem solid #ee7873;*/
     /*padding: 1rem;*/
     position: absolute;
-    top: 0;
+    top: 10px;
     left: 0;
     width: 100%;
     /*padding: 0 1.5rem;*/
@@ -45,6 +52,7 @@ header {
 header img {
 	position: relative;
 	top: 1rem;
+	left: 10px;
 	z-index: 2;
 	/*float: left;*/
 	margin: auto;
@@ -67,6 +75,7 @@ header .btn:active {
 nav {
 	background: rgba(0,0,0,0.5);
 	display: block;
+	margin: 0 10px;
 	text-align: center;
 }
 nav a {
@@ -89,10 +98,36 @@ nav a:active {
 }*/
 [role=main] {
     margin: auto;
-    max-width: 30rem;
+    max-width: 32.5rem;
     padding: 3rem 1.5rem;
     position: relative;
     z-index: 4;
+}
+[role=main] > h3 {
+	/*text-align: center;*/
+	margin: -80px 0 50px;
+	position: relative;
+	text-align: right;
+	z-index: 2;
+}
+[role=main] > h3:before {
+	background: white;
+	content: "More posts below \25BC";
+	padding: 2px 2px 2px 20px;
+	position: relative;
+	z-index: 2;
+}
+
+[role=main] > h3:after {
+	background: #efefef;
+	content: "";
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 2px;
+	height: 80%;
+	width: 100%;
+	z-index: 1;
 }
 article, .feature a {
     color: #888;
@@ -149,6 +184,9 @@ small {
     padding: .35rem .5rem;
     text-decoration: none;
 }
+.btn:active {
+	opacity: .65;
+}
 
 .featured {
 	background: url(http://stylonica.com/wp-content/uploads/2013/08/fashion-backgrounds-for-desktop.jpg) no-repeat center center;
@@ -197,6 +235,10 @@ small {
 	vertical-align: bottom;
 	width: 100%
 }
+.feature a:active {
+	opacity: .65;
+	outline: none;
+}
 .feature h1 {
 	margin: auto;
 	max-width: 30rem;
@@ -229,8 +271,10 @@ nav {
 	/*background: none;*/
 	float: right;
 	padding: 0;
+	margin: 0;
 	position: relative;
-	top: 1rem;
+	top: 1.5rem;
+	right: 10px;
 	/*right: 1rem;*/
 }
 nav a {
@@ -241,6 +285,17 @@ nav a {
 nav a + a {
 	/*margin-left: 1rem;*/
 }
+[role=main] > h3 {
+	margin-top: -50px;
+}
+
+}
+
+@media screen and (min-width: 1000px){
+
+header img {
+	max-width: 150px;
+}
 
 }
 
@@ -249,6 +304,29 @@ nav a + a {
 .featured:after {
 	top: 150px;
 	height: 150px;
+}
+
+}
+
+@media screen and (max-width: 500px){
+
+.featured {
+	padding-bottom: 2.5rem;
+	margin-bottom: 0;
+}
+.featured:after {
+	display: none;
+}
+/*.feature, .feature a {
+	height: 300px;
+}*/
+/*.feature h1 {
+	max-height: 10rem;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}*/
+[role=main] > h3 {
+	margin: -20px 0 35px;
 }
 
 }
