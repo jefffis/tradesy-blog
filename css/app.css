@@ -26,7 +26,7 @@ a:active {
 }
 
 html {
-	border: 10px solid white;
+	/*border: 10px solid white;*/
 	font: normal 100%/1.5 'proxima-nova-regular', 'Helvetica Neue', Arial, sans-serif;
 	overflow-x: hidden;
 }
@@ -46,7 +46,7 @@ header {
     /*border-bottom: 4rem solid #ee7873;*/
     /*padding: 1rem;*/
     position: absolute;
-    top: 10px;
+    top: 0;
     left: 0;
     width: 100%;
     /*padding: 0 1.5rem;*/
@@ -55,7 +55,7 @@ header {
 header img {
 	position: relative;
 	top: 1rem;
-	left: 10px;
+	left: 0;
 	z-index: 2;
 	/*float: left;*/
 	margin: auto;
@@ -78,7 +78,7 @@ header .btn:active {
 nav {
 	background: rgba(0,0,0,0.5);
 	display: block;
-	margin: 0 10px;
+	/*margin: 0 10px;*/
 	text-align: center;
 }
 nav a {
@@ -327,7 +327,7 @@ nav {
 	margin: 0;
 	position: relative;
 	top: 1.5rem;
-	right: 10px;
+	right: 0;
 	/*right: 1rem;*/
 }
 nav a {
