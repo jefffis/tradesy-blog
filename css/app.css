@@ -30,7 +30,10 @@ html {
 	font: normal 100%/1.5 'proxima-nova-regular', 'Helvetica Neue', Arial, sans-serif;
 	overflow-x: hidden;
 }
-
+strong {
+	color: #111;
+	font-weight: normal;
+}
 img {
     display: block;
 }
@@ -274,6 +277,19 @@ small {
 	max-width: 100%;
 	margin-bottom: 1rem;
 }
+.by-line {
+	text-align: center;
+}
+.by-line img {
+	border-radius: 100%;
+	display: block;
+	margin: 0 auto 1rem;
+	max-width: 75px;
+}
+.by-line small {
+	border: 0;
+	padding: 0;
+}
 
 @media screen and (max-width: 800px){
 
@@ -337,6 +353,24 @@ header img {
 [detail] img {
 	max-width: 150%;
 	margin: 0 -25% 3rem;
+}
+
+}
+
+@media screen and (min-width: 1200px){
+
+.by-line {
+	position: absolute;
+	top: 3.5rem;
+	right: -18rem;
+	max-width: 8rem;
+	text-align: left;
+}
+.by-line img {
+	margin-left: 0;
+}
+.by-line small {
+	line-height: 1.5;
 }
 
 }
