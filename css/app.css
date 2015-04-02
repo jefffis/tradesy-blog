@@ -228,13 +228,20 @@ small {
 	position: relative;
 	z-index: 2;
 }
-.feature a {
+.feature.s {
+	width: 100%;
+	float: none;
+}
+.feature a, .feature.s h1 {
 	color: white;
 	display: table-cell;
 	height: 300px;
 	margin: auto;
 	vertical-align: bottom;
 	width: 100%
+}
+.feature.s h1 {
+	text-align: center;
 }
 .feature a:active {
 	opacity: .65;
@@ -247,6 +254,25 @@ small {
 .feature .btn {
 	font-size: 15px;
 	line-height: 1.5;
+}
+
+[detail] [intro] {
+	font-size: 1.5rem;
+}
+[detail] h2 {
+	color: #111;
+	text-transform: uppercase;
+}
+[detail] h2, [detail] p {
+	margin: 0 0 1rem;
+}
+[detail] p + h2 {
+	margin-top: 2rem;
+}
+[detail] img {
+	display: inline-block;
+	max-width: 100%;
+	margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 800px){
@@ -289,6 +315,13 @@ nav a + a {
 [role=main] > h3 {
 	margin-top: -50px;
 }
+[detail] [intro] {
+	margin: 0 -2rem 3rem;
+}
+[detail] img {
+	max-width: 125%;
+	margin: 0 -12.5% 3rem;
+}
 
 }
 
@@ -300,6 +333,10 @@ header img {
 
 [role=main] > h3 {
 	margin: -20px 0 80px;
+}
+[detail] img {
+	max-width: 150%;
+	margin: 0 -25% 3rem;
 }
 
 }
