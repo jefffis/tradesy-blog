@@ -109,6 +109,7 @@ nav a:active {
 	position: relative;
 	text-align: right;
 	z-index: 2;
+	transform: rotate(-2.5deg);
 }
 [role=main] > h3:before {
 	background: white;
@@ -209,7 +210,7 @@ small {
 }
 .cover {
 	background: rgba(0,0,0,0.75);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.35)), color-stop(100%,rgba(0,0,0,0.75)));
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(59,11,9,0.95)), color-stop(100%,rgba(238,120,115,0.5)));
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -314,6 +315,9 @@ header img {
 
 @media screen and (max-width: 500px){
 
+html {
+	border: 0;
+}
 .featured {
 	padding-bottom: 2.5rem;
 	margin-bottom: 0;
@@ -331,6 +335,7 @@ header img {
 }*/
 [role=main] > h3 {
 	margin: -20px 0 35px;
+	transform: rotate(0);
 }
 
 }
