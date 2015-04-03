@@ -34,33 +34,52 @@ strong {
 	color: #111;
 	font-weight: normal;
 }
+h1, h2, h3 {
+	font-weight: normal;	
+}
 img {
     display: block;
 }
 header {
-    /*background: #ee7873;*/
+    background: #ee7873;
+    position: relative;
     /*background: #7dccad;*/
     /*background: #111;*/
     /*background: url(http://wtf.jefff.co/Tradesy-Comps/images/backs/Shiny_Gold.jpg) no-repeat left top;
     background-size: cover;*/
     /*border-bottom: 4rem solid #ee7873;*/
     /*padding: 1rem;*/
-    position: absolute;
+    /*position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100%;*/
     /*padding: 0 1.5rem;*/
     z-index: 3;
 }
+header:after {
+	background: #ee7873;
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: -40px;
+	left:  -25%;
+	height: 150px;
+	width: 150%;
+	transform: rotate(-2.5deg);
+}
 header img {
 	position: relative;
-	top: 1rem;
+	top: 1.25rem;
 	left: 0;
 	z-index: 2;
 	/*float: left;*/
 	margin: auto;
     max-width: 100px;
+    /*opacity: .65;*/
     /*left: 1rem;*/
+}
+header img:active {
+	opacity: .5;
 }
 header .btn {
 	background: none;
@@ -76,16 +95,52 @@ header .btn:active {
 	opacity: .5;
 }
 nav {
-	background: rgba(0,0,0,0.5);
+	background: #323232;
 	display: block;
 	/*margin: 0 10px;*/
+	position: relative;
+	z-index: 10;
 	text-align: center;
+	/*width: 125%;*/
+	/*margin: -80px -12.5% 0;*/
+	/*box-shadow: 0 -2px 0 rgba(0,0,0,0.25) inset, 0 2px 0 rgba(0,0,0,0.25) inset;*/
+}
+nav:before, nav:after {
+	background: #323232;
+	content: "";
+	display: block;
+	height: 80px;
+	margin: 0 -50% 0;
+	position: absolute;
+	top: -55px;
+	left: 0;
+	width: 250%;
+	transform: rotate(-2.5deg);
+	z-index: 1;
+}
+nav:after {
+	top: 0;
+}
+nav.alt:before, nav.alt:after {
+	transform: rotate(2.5deg);
+}
+nav.alt:before {
+	top: -30px;
+}
+nav.alt:after {
+	top: 20px;
 }
 nav a {
 	color: white;
 	display: inline-block;
-	padding: 1rem;
+	font-size: 1.25rem;
+	padding: .5rem;
 	text-decoration: none;
+	position: relative;
+	z-index: 10;
+}
+nav a + a {
+	margin-left: .5rem;
 }
 nav a:active {
 	opacity: .5;
@@ -150,7 +205,7 @@ hr {
 	margin: 4rem -25% 3rem;
 	transform: rotate(2.5deg);
 }
-.alt {
+hr.alt {
 	margin: 3rem -25% 4rem;
 	transform: rotate(-2.5deg);
 }
@@ -212,8 +267,8 @@ small {
 	transform: rotate(-2.5deg);
 }
 .cover {
-	background: rgba(0,0,0,0.75);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(59,11,9,0.95)), color-stop(100%,rgba(238,120,115,0.5)));
+	background: rgba(59,11,9,0.75);
+	/*background: -webkit-gradient(linear, left top, left bottom, color-stop(100%,rgba(59,11,9,1)), color-stop(50%,rgba(59,11,9,0.75)), color-stop(0%,rgba(238,120,115,0.5)));*/
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -259,6 +314,10 @@ small {
 	line-height: 1.5;
 }
 
+[role=main] {
+	padding-top: 100px;
+}
+
 [detail] [intro] {
 	font-size: 1.5rem;
 	margin-bottom: 2rem;
@@ -279,7 +338,7 @@ small {
 	margin-left: -50%;
 	margin-bottom: 3rem;
 }
-img + cite {
+img + figcaption {
 	display: block;
 	font-size: .75rem;
 	font-style: normal;
@@ -289,6 +348,7 @@ img + cite {
 }
 .by-line {
 	text-align: center;
+	padding-bottom: 2rem;
 }
 .by-line img {
 	border-radius: 100%;
@@ -316,18 +376,18 @@ img + cite {
 @media screen and (min-width: 700px){
 
 header img {
-	float: left;
-	top: 1.5rem;
-	left: 1.5rem;
+	/*float: left;*/
+	top: 1.25rem;
+	/*left: 1.5rem;*/
 }
 nav {
 	/*background: none;*/
-	float: right;
+	/*float: right;
 	padding: 0;
 	margin: 0;
 	position: relative;
 	top: 1.5rem;
-	right: 0;
+	right: 0;*/
 	/*right: 1rem;*/
 }
 nav a {
@@ -337,6 +397,12 @@ nav a {
 }
 nav a + a {
 	/*margin-left: 1rem;*/
+}
+[role=main] {
+	padding-top: 150px;
+}
+[sub] {
+	padding-top: 50px;
 }
 [role=main] > h3 {
 	margin-top: -50px;
@@ -360,10 +426,9 @@ header img {
 [role=main] > h3 {
 	margin: -20px 0 80px;
 }
-/*[detail] img {
-	max-width: 150%;
-	margin: 0 -25% 3rem;
-}*/
+[detail] img {
+	border-radius: 3px;
+}
 
 }
 
@@ -398,25 +463,48 @@ header img {
 
 html {
 	border: 0;
+	font-size: 80%;
+}
+p {
+	font-size: 14px;
+}
+img + figcaption {
+	font-size: 12px;
 }
 .featured {
 	padding-bottom: 2.5rem;
 	margin-bottom: 0;
 }
-.featured:after {
-	display: none;
+.feature, .feature.s h1, .feature a {
+	height: 200px;
 }
-/*.feature, .feature a {
-	height: 300px;
+/*.featured:after {
+	display: none;
 }*/
 /*.feature h1 {
 	max-height: 10rem;
 	text-overflow: ellipsis;
 	overflow: hidden;
 }*/
-[role=main] > h3 {
+/*[role=main] > h3 {
 	margin: -20px 0 35px;
 	transform: rotate(0);
+}*/
+/*nav {
+	margin-top: 0;
+	transform: rotate(0);	
+}*/
+[sub] {
+	padding-top: 20px;
+}
+nav:before {
+	top: -35px;
+}
+nav:after {
+	top: -12px;
+}
+nav.alt:after {
+	top: 0px;
 }
 
 }
