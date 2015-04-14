@@ -79,6 +79,9 @@ header img {
     /*opacity: .65;*/
     /*left: 1rem;*/
 }
+/*.art header img {
+	top: 3rem;
+}*/
 header img:active {
 	opacity: .5;
 }
@@ -425,6 +428,7 @@ nav a + a {
 
 header img {
 	max-width: 150px;
+	top: 3rem;
 }
 
 [role=main] > h3 {
@@ -438,6 +442,26 @@ header img {
 
 @media screen and (min-width: 1200px){
 
+[detail] .zoomed {
+	max-width: 350%;
+	margin-left: -125%;
+}
+.zoomable img {
+	cursor: pointer;
+	transition: all .25s ease-in-out;
+}
+.zoomable img:active {
+	opacity: .5;
+	transform: scale(.95);
+}
+.zoomable figcaption:before {
+	content: "Click image to zoom";
+	display: block;
+	padding-bottom: .5rem;
+	margin-top: -.5rem;
+	opacity: .5;
+	text-transform: uppercase;
+}
 .by-line {
 	position: absolute;
 	top: 3.5rem;
