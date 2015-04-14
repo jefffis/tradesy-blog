@@ -41,32 +41,33 @@ img {
     display: block;
 }
 header {
-    background: #ee7873;
-    position: relative;
+    /*background: #ee7873;*/
+    /*position: relative;*/
     /*background: #7dccad;*/
     /*background: #111;*/
     /*background: url(http://wtf.jefff.co/Tradesy-Comps/images/backs/Shiny_Gold.jpg) no-repeat left top;
     background-size: cover;*/
     /*border-bottom: 4rem solid #ee7873;*/
     /*padding: 1rem;*/
-    /*position: absolute;
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100%;*/
+    width: 100%;
     /*padding: 0 1.5rem;*/
     z-index: 3;
 }
-header:after {
+/*header:after {
 	background: #ee7873;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ee7873), color-stop(100%,#913834));
 	content: "";
 	display: block;
 	position: absolute;
 	bottom: -40px;
 	left:  -25%;
-	height: 150px;
+	height: 250px;
 	width: 150%;
 	transform: rotate(-2.5deg);
-}
+}*/
 header img {
 	position: relative;
 	top: 1.25rem;
@@ -119,7 +120,7 @@ nav:before, nav:after {
 	z-index: 1;
 }
 nav:after {
-	top: 0;
+	top: -10px;
 }
 nav.alt:before, nav.alt:after {
 	transform: rotate(2.5deg);
@@ -413,6 +414,9 @@ nav a + a {
 [detail] img {
 	/*max-width: 150%;*/
 	/*margin: 0 -25% 3rem;*/
+}
+.featured {
+	padding-top: 155px;
 }
 
 }
