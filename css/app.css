@@ -538,11 +538,17 @@ img + figcaption {
 [sub] {
 	padding-top: 20px;
 }
+nav {
+	top: 10px;
+}
 nav:before {
 	top: -35px;
 }
 nav:after {
 	top: -12px;
+}
+nav.alt {
+	top: 0;
 }
 nav.alt:after {
 	top: 0px;
