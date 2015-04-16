@@ -519,6 +519,9 @@ img + figcaption {
 .feature, .feature.s h1, .feature a {
 	height: 200px;
 }
+.feature {
+	top: 60px;
+}
 /*.featured:after {
 	display: none;
 }*/
