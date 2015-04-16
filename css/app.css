@@ -56,6 +56,19 @@ header {
     /*padding: 0 1.5rem;*/
     z-index: 3;
 }
+header small {
+	background: url(../img/gem.png) no-repeat 0 0;
+	background-size: cover;
+	border: 0;
+	display: block;
+	/*float: right;*/
+	height: 40px;
+	/*text-indent: 100%;*/
+	position: absolute;
+	top: 1em;
+	right: 1rem;
+	width: 40px;
+}
 /*header:after {
 	background: #ee7873;
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ee7873), color-stop(100%,#913834));
