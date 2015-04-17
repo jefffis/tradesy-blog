@@ -301,12 +301,13 @@ a {
     color: #ee7873;
 }
 small {
-    border-left: 2px solid #efefef;
+    /*border-left: 2px solid #efefef;*/
     color: #ccc;
     display: block;
     line-height: 1;
     margin-bottom: .75rem;
-    padding-left: .5rem;
+    /*padding-left: .5rem;*/
+    /*text-transform: uppercase;*/
 }
 .btn {
     background: #ee7873;
@@ -376,6 +377,11 @@ small {
 .feature.s h1 {
 	text-align: center;
 }
+.feature.s small {
+	color: rgba(255,255,255,0.75);
+	font-size: 1rem;
+	padding-top: 1rem;
+}
 .feature a:active {
 	opacity: .65;
 	outline: none;
@@ -403,7 +409,7 @@ small {
 	position: relative;
 	text-transform: uppercase;
 }
-[detail] h2:before, [detail] h3:before {
+[detail] h2:hover:before, [detail] h3:hover:before {
 	color: #756767;
 	content: "\00B6";
 	position: absolute;
@@ -421,6 +427,9 @@ small {
 	max-width: 200%;
 	margin-left: -50%;
 	margin-bottom: 3rem;
+}
+[detail] p + figure {
+	margin-top: 2rem;
 }
 img + figcaption {
 	display: block;
@@ -573,6 +582,27 @@ footer p {
 	margin-top: .5rem;
 }
 
+.type {
+	display: block;
+	font-size: .75rem;
+	/*margin-bottom: -30px;*/
+	/*padding-left: 30px;*/
+	position: relative;
+	text-transform: uppercase;
+}
+.type:before {
+	background: #7dccad;
+	border-radius: 100%;
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: -30px;
+	top: 0;
+	height: 15px;
+	width: 15px;
+	overflow: hidden;
+}
+
 @media screen and (max-width: 800px){
 
 .feature {
@@ -620,7 +650,9 @@ nav a + a {
 	margin-top: -50px;
 }
 [detail] [intro] {
-	margin: 0 -2rem 3rem;
+	color: #333;
+	line-height: 1.35;
+	margin: 0 -1.5rem 2rem;
 }
 [detail] img {
 	/*max-width: 150%;*/
