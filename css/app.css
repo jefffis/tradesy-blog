@@ -172,6 +172,7 @@ nav a:after {
 	display: block;
 	width: 100%;
 	border-bottom: 2px solid currentColor;
+	margin-top: -3px;
 }
 nav a:active:after {
 	display: none;
@@ -485,6 +486,34 @@ footer p {
 	color: #999;
 }
 
+.pagination {
+	/*padding-top: 3rem;*/
+	text-align: center;
+}
+.pagination span, .pagination a {
+	color: #999;
+	display: inline-block;
+	line-height: 1;
+	padding: .75rem;
+}
+.pagination a {
+	background: #ddd;
+	border-radius: 3px;
+	color: #333;
+	min-width: 2.5rem;
+	text-decoration: none;
+}
+.pagination a:hover {
+	background: #333;
+	color: white;
+}
+.pagination a:active {
+	opacity: .5;
+}
+.pagination a + a {
+	margin-left: .5rem;
+}
+
 @media screen and (max-width: 800px){
 
 .feature {
@@ -669,6 +698,17 @@ nav a {
 [detail] [intro] {
 	font-size: 1.25rem;
 }
+
+.h figure {
+	margin: 0 -1.5rem 1.5rem;
+}
+
+.pagination {
+	text-align: left;
+}
+.pagination span, .pagination a {
+	text-align: center;
+}
 /*.featured:after {
 	display: none;
 }*/
@@ -687,6 +727,9 @@ nav a {
 }*/
 [role=main] {
 	padding-top: 2rem;
+}
+.h [role=main] {
+	padding-top: 0;
 }
 /*[sub] {
 	padding-top: 20px;
