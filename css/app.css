@@ -187,13 +187,16 @@ nav span {
 	float: left;
 	height: auto;
 	top: .75rem;
-	left: 1rem;
+	left: .75rem;
 	text-align: left;
 	text-indent: -9999px;
-	background: url(../img/logo-www.png) no-repeat 0 0;
+	/*border-radius: 4px;*/
+	/*background: url(../img/logo-www.png) no-repeat 0 0;*/
+	background: white;
 	background-size: contain;
 	height: 40px;
 	width: 100px;
+	opacity: .5;
 	/*text-transform: uppercase;*/
 }
 /*nav em {
@@ -364,7 +367,7 @@ small {
 .feature a, .feature.s h1 {
 	color: white;
 	display: table-cell;
-	height: 300px;
+	height: 250px;
 	margin: auto;
 	vertical-align: bottom;
 	width: 100%
@@ -436,6 +439,9 @@ img + figcaption {
 	height: 200px;
 	margin-bottom: 1.5rem;
 	overflow: hidden;
+}
+.h a:active img {
+	opacity: .5;
 }
 .h img {
 	width: 100%;
@@ -513,6 +519,7 @@ header img {
 
 .h [role=main] {
 	max-width: 800px;
+	padding-top: 6rem;
 }
 .h figure {
 	float: left;
@@ -526,6 +533,10 @@ header img {
 .h .content {
 	float: right;
 	width: 500px;
+}
+
+.feature.s h1 {
+	height: 300px;
 }
 
 [role=main] > h3 {
