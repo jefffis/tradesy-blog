@@ -353,7 +353,7 @@ small {
 .feature {
 	display: table;
 	float: left;
-	height: 300px;
+	height: 250px;
 	padding: 0 2rem;
 	/*text-align: center;*/
 	width: 50%;
@@ -367,7 +367,7 @@ small {
 .feature a, .feature.s h1 {
 	color: white;
 	display: table-cell;
-	height: 250px;
+	height: 200px;
 	margin: auto;
 	vertical-align: bottom;
 	width: 100%
@@ -536,7 +536,7 @@ header img {
 }
 
 .feature.s h1 {
-	height: 300px;
+	height: 250px;
 }
 
 [role=main] > h3 {
@@ -628,6 +628,9 @@ nav a {
 .feature {
 	margin-top: 60px;
 }
+[detail] [intro] {
+	font-size: 1.25rem;
+}
 /*.featured:after {
 	display: none;
 }*/
@@ -644,9 +647,12 @@ nav a {
 	margin-top: 0;
 	transform: rotate(0);	
 }*/
-[sub] {
-	padding-top: 20px;
+[role=main] {
+	padding-top: 2rem;
 }
+/*[sub] {
+	padding-top: 20px;
+}*/
 nav {
 	top: 10px;
 }
