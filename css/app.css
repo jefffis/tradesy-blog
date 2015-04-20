@@ -215,9 +215,9 @@ nav a:first-child img {
 	top: .85rem;
 	left: 1rem;
 }*/
-nav a + a {
-	margin-left: .5rem;
-}
+/*nav a + a {
+	margin-right: .5rem;
+}*/
 nav a:active {
 	opacity: .5;
 }
