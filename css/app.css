@@ -325,6 +325,7 @@ small {
 .featured {
 	background: url(http://stylonica.com/wp-content/uploads/2013/08/fashion-backgrounds-for-desktop.jpg) no-repeat center center;
 	background-size: cover;
+	border-bottom: .5rem solid #ee7873;
 	padding: 5rem 0;
 	margin-bottom: -20px;
 	position: relative;
@@ -469,6 +470,7 @@ img + figcaption {
 
 footer {
 	background: #111;
+	border-top: .5rem solid #ee7873;
 	padding: 3rem 1.5rem;
 }
 footer div {
@@ -603,6 +605,21 @@ footer p {
 	overflow: hidden;
 }
 
+pre {
+	background: rgba(50,50,50,0.05);
+	color: #111;
+	margin: 2rem 0;
+	padding: 1rem;
+	white-space: nowrap;
+	word-wrap: break-word;
+}
+pre * {
+	margin: 0 !important;
+}
+pre p {
+	opacity: .75;
+}
+
 @media screen and (max-width: 800px){
 
 .feature {
@@ -661,7 +678,7 @@ nav a + a {
 .featured {
 	padding-top: 155px;
 }
-[detail] h2, [detail] p, [detail] h3 {
+[detail] h2, [detail] p, [detail] h3, pre {
 	margin-left: -1.5rem;
 	margin-right: -1.5rem;
 }
@@ -787,17 +804,22 @@ nav a {
 	padding: 1.25rem .75rem;
 }
 .featured {
+	border-bottom: 0;
 	padding-bottom: 2.5rem;
 	margin-bottom: 0;
 }
 .feature, .feature.s h1, .feature a {
 	height: 200px;
+	text-align: left;
 }
 .feature {
 	margin-top: 60px;
 }
 [detail] [intro] {
 	font-size: 1.25rem;
+}
+[role=main] {
+	max-width: none;
 }
 
 .h figure {
@@ -862,6 +884,12 @@ nav.alt:after {
 	display: none;
 }
 
+pre {
+	margin-left: -1.5rem;
+	margin-right: -1.5rem;
+	padding: 1.5rem;
+}
+
 }
 
 @media screen and (max-width: 599px) {
@@ -875,6 +903,14 @@ footer div div, footer div div + div {
 }
 footer div div + div {
 	padding-top: 2.5rem;
+}
+
+}
+
+@media screen and (min-width: 1301px) and (min-height: 901px) {
+
+.feature {
+	height: 325px;
 }
 
 }
