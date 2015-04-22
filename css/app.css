@@ -174,13 +174,20 @@ nav a, nav span {
 	float: right;
 	/*height: 4rem;*/
 }
-nav a:after {
+nav [active]:after/*, nav a:hover:after,nav a:active:after */ {
+	background: currentColor;
+	border-radius: 2px;
 	content: "";
 	display: block;
-	width: 100%;
-	border-bottom: 2px solid currentColor;
-	margin-top: -3px;
+	height: 2px;
+	opacity: .5;
+	width: 96%;
+	/*border-bottom: 2px solid currentColor;*/
+	margin: -2px 2% 0;
 }
+/*nav [active]:after {
+	opacity: .5;
+}*/
 nav a:active:after {
 	border-color: transparent;
 }
@@ -253,13 +260,13 @@ nav a:active {
 	/*-webkit-transform: rotate(-2.5deg);
 	transform: rotate(-2.5deg);*/
 }
-[role=main] > h3:before {
+/*[role=main] > h3:before {
 	background: white;
 	content: "More posts below \25BC";
 	padding: 2px 2px 2px 20px;
 	position: relative;
 	z-index: 2;
-}
+}*/
 
 [role=main] > h3:after {
 	background: #efefef;
@@ -479,6 +486,15 @@ img + figcaption {
 }
 .h img {
 	width: 100%;
+}
+
+[sub] h4 {
+	color: #999;
+	font-weight: normal;
+	letter-spacing: 1.5px;
+	margin-bottom: 2rem;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 footer {
@@ -713,6 +729,10 @@ header img {
 	max-width: 800px;
 	padding-top: 6rem;
 }
+.wide {
+	width: 750px;
+	margin-left: -115px;
+}
 .h figure {
 	float: left;
 	height: auto;
@@ -874,6 +894,7 @@ nav a {
 /*[sub] {
 	padding-top: 20px;
 }*/
+
 nav {
 	top: 10px;
 }
