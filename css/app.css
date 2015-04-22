@@ -33,6 +33,13 @@ strong {
 	color: #111;
 	font-weight: normal;
 }
+p {
+	font-family: 'utopia-std', sans-serif;
+	font-weight: 400;
+}
+p strong {
+	font-weight: 600;
+}
 h1, h2, h3 {
 	font-weight: normal;	
 }
@@ -40,13 +47,13 @@ img {
     display: block;
 }
 header {
-    /*background: #ee7873;*/
+    /*background: #111;*/
     /*position: relative;*/
     /*background: #7dccad;*/
     /*background: #111;*/
     /*background: url(http://wtf.jefff.co/Tradesy-Comps/images/backs/Shiny_Gold.jpg) no-repeat left top;
     background-size: cover;*/
-    /*border-bottom: 4rem solid #ee7873;*/
+    /*border-bottom: 4rem solid #111;*/
     /*padding: 1rem;*/
     position: absolute;
     top: 0;
@@ -69,8 +76,8 @@ header small {
 	width: 40px;
 }
 /*header:after {
-	background: #ee7873;
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ee7873), color-stop(100%,#913834));
+	background: #111;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#111), color-stop(100%,#913834));
 	content: "";
 	display: block;
 	position: absolute;
@@ -298,7 +305,7 @@ h1 {
     margin-bottom: 1rem;
 }
 a {
-    color: #ee7873;
+    color: #111;
 }
 small {
     /*border-left: 2px solid #efefef;*/
@@ -310,10 +317,11 @@ small {
     /*text-transform: uppercase;*/
 }
 .btn {
-    background: #ee7873;
+    background: #111;
     border-radius: 3px;
     color: white;
     display: inline-block;
+    font-family: 'proxima-nova-regular', 'Helvetica Neue', Arial, sans-serif;
     margin-top: 1rem;
     padding: .35rem .5rem;
     text-decoration: none;
@@ -325,7 +333,7 @@ small {
 .featured {
 	background: url(http://stylonica.com/wp-content/uploads/2013/08/fashion-backgrounds-for-desktop.jpg) no-repeat center center;
 	background-size: cover;
-	border-bottom: .5rem solid #ee7873;
+	border-bottom: .5rem solid #111;
 	padding: 5rem 0;
 	margin-bottom: -20px;
 	position: relative;
@@ -344,7 +352,8 @@ small {
 	transform: rotate(-2.5deg);*/
 }
 .cover {
-	background: rgba(59,11,9,0.75);
+	background: rgba(0,0,0,0.75);
+	/*background: rgba(59,11,9,0.75);*/
 	/*background: -webkit-gradient(linear, left top, left bottom, color-stop(100%,rgba(59,11,9,1)), color-stop(50%,rgba(59,11,9,0.75)), color-stop(0%,rgba(238,120,115,0.5)));*/
 	position: absolute;
 	top: 0;
@@ -372,6 +381,7 @@ small {
 	display: table-cell;
 	height: 200px;
 	margin: auto;
+	text-decoration: none;
 	vertical-align: bottom;
 	width: 100%
 }
@@ -379,7 +389,8 @@ small {
 	text-align: center;
 }
 .feature.s small {
-	color: rgba(255,255,255,0.75);
+	color: white;
+	font-family: 'utopia-std', sans-serif;
 	font-size: 1rem;
 	padding-top: 1rem;
 }
@@ -392,6 +403,8 @@ small {
 	max-width: 30rem;
 }
 .feature .btn {
+	background: white;
+	color: #111;
 	font-size: 15px;
 	line-height: 1.5;
 }
@@ -470,7 +483,7 @@ img + figcaption {
 
 footer {
 	background: #111;
-	border-top: .5rem solid #ee7873;
+	/*border-top: .5rem solid #111;*/
 	padding: 3rem 1.5rem;
 }
 footer div {
@@ -505,6 +518,10 @@ footer h4 {
 }
 footer p {
 	color: #999;
+}
+footer .btn, footer .btn:hover {
+	background: white;
+	color: #111;
 }
 
 .pagination {
