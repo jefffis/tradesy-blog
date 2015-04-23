@@ -883,6 +883,10 @@ nav a {
 .pagination span, .pagination a {
 	text-align: center;
 }
+
+.h article + hr {
+	margin-bottom: 0;
+}
 /*.featured:after {
 	display: none;
 }*/
