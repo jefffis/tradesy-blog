@@ -336,6 +336,14 @@ small {
 .btn:active {
 	opacity: .65;
 }
+/*article .btn {
+	background: white;
+	color: #111;
+	letter-spacing: .5px;
+	padding: 0;
+	text-decoration: underline;
+	text-transform: uppercase;
+}*/
 
 .featured {
 	background: url(http://stylonica.com/wp-content/uploads/2013/08/fashion-backgrounds-for-desktop.jpg) no-repeat center center;
@@ -667,10 +675,8 @@ pre p {
 
 @media screen and (min-width: 700px){
 
-header img {
-	/*float: left;*/
-	/*top: 1.25rem;*/
-	/*left: 1.5rem;*/
+header {
+	padding: 1rem 1rem 0;
 }
 nav {
 	/*background: none;*/
@@ -837,6 +843,13 @@ p {
 img + figcaption {
 	font-size: 12px;
 }
+nav {
+	padding-right: .5rem;
+}
+nav span {
+	left: 1.5rem;
+	width: 65px;
+}
 nav a {
 	padding: 1.25rem .75rem;
 }
@@ -851,6 +864,7 @@ nav a {
 }
 .feature {
 	margin-top: 60px;
+	padding: 0 1.5rem;
 }
 [detail] [intro] {
 	font-size: 1.25rem;
