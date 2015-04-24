@@ -186,6 +186,7 @@ nav [logo] {
 }
 nav [logo] img {
 	position: static;
+	width: 100%;
 }
 nav [active]:after/*, nav a:hover:after,nav a:active:after */ {
 	background: currentColor;
