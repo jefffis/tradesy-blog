@@ -101,9 +101,9 @@ header img {
 /*.art header img {
 	top: 3rem;
 }*/
-header img:active {
+/*header img:active {
 	opacity: .5;
-}
+}*/
 header .btn {
 	background: none;
 	font-size: 1rem;
@@ -174,6 +174,19 @@ nav a, nav span {
 	float: right;
 	/*height: 4rem;*/
 }
+nav img, nav [logo] {
+	position: relative;
+	float: left;
+	max-width: 50px;
+	top: 1rem;
+	left: 1rem;
+}
+nav [logo] {
+	padding: 0;
+}
+nav [logo] img {
+	position: static;
+}
 nav [active]:after/*, nav a:hover:after,nav a:active:after */ {
 	background: currentColor;
 	border-radius: 2px;
@@ -188,6 +201,9 @@ nav [active]:after/*, nav a:hover:after,nav a:active:after */ {
 /*nav [active]:after {
 	opacity: .5;
 }*/
+nav a {
+	top: .5rem;
+}
 nav a:active:after {
 	border-color: transparent;
 }
@@ -207,11 +223,11 @@ nav span {
 	text-indent: -9999px;
 	/*border-radius: 4px;*/
 	/*background: url(../img/logo-www.png) no-repeat 0 0;*/
-	background: white;
-	background-size: contain;
-	height: 40px;
+	background: url(../img/gem.png) no-repeat 0 0;
+	background-size: 70px;
+	height: 70px;
 	width: 100px;
-	opacity: .5;
+	/*opacity: .5;*/
 	/*text-transform: uppercase;*/
 }
 /*nav em {
@@ -396,7 +412,7 @@ small {
 	display: table-cell;
 	height: 200px;
 	margin: auto;
-	text-decoration: none;
+	/*text-decoration: none;*/
 	vertical-align: bottom;
 	width: 100%
 }
@@ -847,6 +863,7 @@ nav {
 	padding-right: .5rem;
 }
 nav span {
+	top: 1.25rem;
 	left: 1.5rem;
 	width: 65px;
 }
