@@ -413,7 +413,7 @@ small {
 	display: table-cell;
 	height: 200px;
 	margin: auto;
-	/*text-decoration: none;*/
+	text-decoration: none;
 	vertical-align: bottom;
 	width: 100%
 }
