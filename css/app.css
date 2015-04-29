@@ -23,6 +23,9 @@ a:hover {
 a:active {
 	outline: 2px dotted currentColor;
 }
+[sub] [detail] a {
+	color: #ee7873;
+}
 
 html {
 	/*border: 10px solid white;*/
@@ -305,6 +308,12 @@ article, .feature a {
     margin-top: 3rem;
     padding-top: 3rem;
 }*/
+article h1 a {
+	text-decoration: none;
+}
+article h1 a:hover {
+	text-decoration: underline;
+}
 hr {
 	background: #efefef;
 	border: 0;
