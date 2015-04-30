@@ -175,6 +175,8 @@ nav a, nav span {
 	position: relative;
 	z-index: 10;
 	float: right;
+	letter-spacing: 1px;
+	text-transform: uppercase;
 	/*height: 4rem;*/
 }
 nav img, nav [logo] {
@@ -191,7 +193,7 @@ nav [logo] img {
 	position: static;
 	width: 100%;
 }
-nav [active]:after/*, nav a:hover:after,nav a:active:after */ {
+nav [active]:after, nav a:hover:after,nav a:active:after {
 	background: currentColor;
 	border-radius: 2px;
 	content: "";
@@ -201,6 +203,9 @@ nav [active]:after/*, nav a:hover:after,nav a:active:after */ {
 	width: 96%;
 	/*border-bottom: 2px solid currentColor;*/
 	margin: -2px 2% 0;
+}
+nav [logo]:hover:after {
+	display: none;
 }
 /*nav [active]:after {
 	opacity: .5;
@@ -314,6 +319,9 @@ article h1 a {
 article h1 a:hover {
 	text-decoration: underline;
 }
+article p:last-child {
+	margin-top: 1rem;
+}
 hr {
 	background: #efefef;
 	border: 0;
@@ -351,12 +359,12 @@ small {
 }
 .btn {
     background: #111;
-    border-radius: 3px;
+    /*border-radius: 3px;*/
     color: white;
     display: inline-block;
     font-family: 'proxima-nova-regular', 'Helvetica Neue', Arial, sans-serif;
     margin-top: 1rem;
-    padding: .35rem .5rem;
+    padding: .35rem .75rem .4rem;
     text-decoration: none;
 }
 .btn:active {
@@ -372,7 +380,7 @@ small {
 }*/
 
 .featured {
-	background: url(http://stylonica.com/wp-content/uploads/2013/08/fashion-backgrounds-for-desktop.jpg) no-repeat center center;
+	background: #111 url(http://stylonica.com/wp-content/uploads/2013/08/fashion-backgrounds-for-desktop.jpg) no-repeat center center;
 	background-size: cover;
 	border-bottom: .5rem solid #111;
 	padding: 5rem 0;
@@ -563,6 +571,7 @@ footer a:hover {
 }
 footer h4 {
 	color: white;
+	letter-spacing: 1px;
 	margin-bottom: 1rem;
 	text-transform: uppercase;
 }
@@ -612,16 +621,19 @@ footer .btn, footer .btn:hover {
 }
 .tags a {
 	background: #999;
-	border-radius: 0 2px 2px 0;
+	/*border-radius: 0 2px 2px 0;*/
+	border-radius: 2px;
 	color: white;
 	display: inline-block;
 	font-size: .85rem;
 	line-height: 1;
-	margin-left: 1rem;
-	padding: .5rem .5rem .5rem .25rem;
+	margin-left: .5rem;
+	/*padding: .5rem .5rem .5rem .25rem;*/
+	padding: .5rem;
 	position: relative;
+	text-decoration: none;
 }
-.tags a:before {
+/*.tags a:before {
 	content: "";
 	border-right: 10px solid #999;
 	border-bottom: 15px solid transparent;
@@ -629,7 +641,7 @@ footer .btn, footer .btn:hover {
 	position: absolute;
 	left: -10px;
 	top: 0;
-}
+}*/
 .tags a:hover {
 	background: #323232;
 }
@@ -951,6 +963,10 @@ nav:after {
 }
 nav.alt {
 	top: 0;
+}
+nav a {
+	letter-spacing: normal;
+	text-transform: none;
 }
 nav.alt:after {
 	top: 0px;
